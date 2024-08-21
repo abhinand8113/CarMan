@@ -1,0 +1,534 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<title>CarMan index</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Bank_lock  web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web Designs" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--// Meta tag Keywords -->
+
+<!-- css files -->
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}"> <!-- Bootstrap-Core-CSS -->
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all" /> <!-- Style-CSS -->
+<link rel="stylesheet" href="{% static 'css/font-awesome.css' %}"> <!-- Font-Awesome-Icons-CSS -->
+<!-- //css files -->
+
+<!-- web-fonts -->
+<link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<!-- //web-fonts -->
+</head>
+<body>
+<div class="header" style="background:black">
+		<nav class="navbar navbar-default link-effect-8" id="link-effect-8" style="background:black">
+					<div class="navbar-header" >
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<h1><a href="">Car<span><i class="fa fa-car" aria-hidden="true"></i></span>Man</a></h1>
+					</div>
+					<div class="top-nav-text">
+						<div class="nav-contact-w3ls"><i class="fa fa-phone" aria-hidden="true"></i><p>+91 8113924524</p></div>
+					</div>
+					<!-- navbar-header -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a class=" active" href="index">Home</a></li>
+							<li><a href="#about" class="scroll">About</a></li>
+							<li><a href="#services" class="scroll">Services</a></li>
+							<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Login<span class="caret"></span></a>
+       						 <ul class="dropdown-menu">
+          						<li><a href="driverlog">Driver</a></li>
+								 <li><a href="userlogin">User</a></li>
+								 <li><a href="adminlogin">Admin</a></li>
+       						 </ul>
+      							</li>
+							<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Register<span class="caret"></span></a>
+       						 <ul class="dropdown-menu" >
+          						<li><a href="driverregform">Driver</a></li>
+								 <li><a href="userregform">User</a></li>
+
+       						 </ul>
+      							</li>
+							<li><a href="#contact" class="scroll">Contact</a>
+						</ul>
+					</div>
+
+					<div class="clearfix"> </div>
+				</nav>
+
+	</div>
+<!-- Slider -->
+<div class="slider" id="home">
+	<div class="callbacks_container">
+		<ul class="rslides" id="slider">
+			<li>
+				<div class="w3layouts-banner-top w3layouts-banner-top1"  style="background-image:url({% static 'images/cman1.jpg' %})">
+					<div class="banner-dott">
+					<div class="container">
+						<div class="slider-info">
+							<div class="col-md-8  slider-info-txt">
+								<h2>Your Personal Driver at One Click</h2>
+								<div class="w3ls-button">
+									<a href="userlogin">Book CarMan</a>
+								</div>
+
+							</div>
+							<div class="col-md-4">
+
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="w3layouts-banner-top" style="background-image:url({% static 'images/cman2.jpg' %})">
+
+					<div class="banner-dott">
+					<div class="container">
+						<div class="slider-info">
+							<div class="col-md-8 slider-info-txt">
+								<h3>Navigate the future of travel with us!</h3>
+
+								<div class="w3ls-button">
+									<a href="userlogin">Book CarMan</a>
+								</div>
+
+							</div>
+							<div class="col-md-4">
+
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="w3layouts-banner-top w3layouts-banner-top3"  style="background-image:url({% static 'images/cman3.jpg' %})">
+					<div class="banner-dott">
+					<div class="container">
+						<div class="slider-info">
+							<div class="col-md-8 slider-info-txt">
+								<h3>Driving you to your destination in style.</h3>
+
+								<div class="w3ls-button">
+									<a href="userprofile">Book CarMan</a>
+								</div>
+
+							</div>
+							<div class="col-md-4">
+
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+<!-- //Slider -->
+<!-- bootstrap-modal-pop-up -->
+	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					Car Man
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+					<div class="modal-body">
+						<img src="{% static 'images/car3.jpg' %}" alt=" " class="img-responsive" />
+						<h4>Why Choose CarMan</h4>
+						<p>With CarMan, reliability is not just a promise; it's our commitment.
+							Our carefully vetted drivers are here to provide a punctual and trustworthy service,
+							so you can rest assured that you'll reach your destination on time, every time.
+							</p><br>
+						<p>Your safety is our top priority. Our drivers undergo rigorous screening processes,
+							and our vehicles adhere to the highest safety standards.
+							Sit back, relax, and enjoy the journey with the confidence that you're in safe hands.
+							</p>
+					</div>
+			</div>
+		</div>
+	</div>
+<!-- //bootstrap-modal-pop-up -->
+<!-- welcome -->
+<div class="welcome" id="about">
+	<div class="container">
+
+		<div class="welcome-grids">
+			<div class="col-md-6 welcome-w3right"><br>
+				<img src="{% static 'images/car2.jpg' %}" class="img-responsive" alt="" />
+			</div>
+			<div class="col-md-6 welcome-w3left">
+				<h3>Welcome to CarMan - Your Ultimate Destination for Hassle-Free Travel!</h3>
+				<p>At CarMan, we understand that every journey is a unique story waiting to be unfolded.
+					That's why we've dedicated ourselves to redefine your travel experience, one ride at a time.
+					As avid believers in convenience, safety, and reliability, we've crafted a platform that
+					seamlessly connects you with professional and courteous drivers,
+					ensuring you reach your destination with ease.</p>
+				<div class="readmore-w3-about">
+					<a class="readmore" href="#" data-toggle="modal" data-target="#myModal">View More</a>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- //welcome -->
+
+<!--/services-->
+<div class="services" id="services">
+<div class="container">
+<div class="w3-heading-all">
+		<h3>Services</h3>
+	</div>
+		<div class="w3-agile-services-grids1">
+			<div class="col-md-6 services-left-grid">
+				<h3>ONE WAY<span>TRIP</span></h3>
+				<h5><span><i class="fa fa-check" aria-hidden="true"></i></span>Single Route</h5>
+				<p>Simplify your solo adventures with seamless single-route trips at your fingertips.</p>
+				<p>Navigate the city effortlessly with our convenient single-route trip options,
+				Discover the joy of solo travel with our streamlined single-route trip services</p>
+			</div>
+			<div class="col-md-6 services-right-grid">
+			<img src="{% static 'images/car4.jpg' %}" class="img-responsive" alt="" />
+			   </div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="w3-agile-services-grids2">
+			<div class="col-md-6 services-right-grid">
+			<img src="{% static 'images/car6.jpg' %}" class="img-responsive" alt="" />
+			   </div>
+			   <div class="col-md-6 services-left-grid">
+				<h3>ROUND <span>TRIP</span></h3>
+				<h5><span><i class="fa fa-check" aria-hidden="true"></i></span>Two way</h5>
+				<p>Turn your travels into a smooth cycle with our convenient round trip options. </p>
+				<p>Experience the ease of coming full circle with our reliable round trip bookings.
+					Make your journey a closed loop of comfort with our round trip services.</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="w3-agile-services-grids3">
+			<div class="col-md-6 services-left-grid">
+				<h3>PACKAGE <span>TRIPS</span></h3>
+				<h5><span><i class="fa fa-check" aria-hidden="true"></i></span>PACKAGES</h5>
+				<p>Your dream destination awaits in our hassle-free, ready-to-go package trips.
+					unlock the full potential of your vacation with our curated package adventures.
+					Savor the journey with our comprehensive package trips tailored just for you</p>
+			</div>
+			<div class="col-md-6 services-right-grid">
+			<img src="{% static 'images/car5.jpg' %}" class="img-responsive" alt="" />
+			   </div>
+			<div class="clearfix"></div>
+		</div>
+</div>
+</div>
+<!--//services-->
+<!-- agents -->
+	<div class="jarallax w3ls-section team1" id="agents">
+		<div class="container">
+			<div class="w3-heading-all">
+				<h3><span>A</span>gents</h3>
+			</div>
+			<div id="team" class="team">
+			<div class="team-info">
+				<div class="col-md-4 team-grids">
+					<img class="img-responsive" src="{% static 'images/tm1.jpg' %}" alt="">
+
+					<h4>pulvinar</h4>
+				</div>
+				<div class="col-md-4 team-grids">
+					<img class="img-responsive" src="{% static 'images/tm2.jpg' %}" alt="">
+
+					<h4>Enimet</h4>
+				</div>
+				<div class="col-md-4 team-grids">
+					<img class="img-responsive" src="{% static 'images/tm3.jpg' %}" alt="">
+
+					<h4>Tincidun</h4>
+				</div>
+				<div class="col-md-4 team-grids">
+					<img class="img-responsive" src="{% static 'images/tm4.jpg' %}" alt="">
+
+					<h4>Inaren</h4>
+				</div>
+			<div class="clearfix"></div>
+		</div>
+	 </div>
+	</div>
+	</div>
+	<!-- //agents -->
+
+<!-- Counter -->
+<div class="stats">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-3 stats-grid stats-grid-1 gridw3">
+				<i class="fa fa-smile-o" aria-hidden="true"></i>
+				<div class="numscroller" data-slno='1' data-min='0' data-max='158' data-delay='3' data-increment="1">85</div>
+				<h4>Happy Customers</h4>
+			</div>
+			<div class="col-md-3 col-sm-3 stats-grid stats-grid-2 gridw3">
+				<i class="fa fa-trophy" aria-hidden="true"></i>
+				<div class="numscroller" data-slno='1' data-min='0' data-max='63' data-delay='3' data-increment="1">95</div>
+				<h4>Awards </h4>
+			</div>
+			<div class="col-md-3 col-sm-3 stats-grid stats-grid-3 gridw3">
+				<i class="fa fa-laptop" aria-hidden="true"></i>
+				<div class="numscroller" data-slno='1' data-min='0' data-max='421' data-delay='3' data-increment="1">80</div>
+				<h4>collabaration</h4>
+			</div>
+			<div class="col-md-3 col-sm-3 stats-grid stats-grid-4 gridw3">
+				<i class="fa fa-users" aria-hidden="true"></i>
+				<div class="numscroller" data-slno='1' data-min='0' data-max='562' data-delay='3' data-increment="1">90</div>
+				<h4>Members</h4>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- //Counter -->
+<!-- testimonials -->
+	<div class="testimonials" id="testimonials">
+		<div class="container">
+		<div class="w3-heading-all">
+			<h3>Testimonials</h3>
+			<div class="w3ls_testimonials_grids">
+				 <section class="center slider">
+						<div class="agileits_testimonial_grid">
+							<div class="w3l_testimonial_grid">
+								<p>Appreciate the attention to detail. The driver was well-mannered,
+									and the cleanliness of the car didn't go unnoticed. A trustworthy service.</p>
+								<h4>Rosy Crisp</h4>
+								<h5>Student</h5>
+								<div class="w3l_testimonial_grid_pos">
+									<img src="{% static 'images/c1.jpg' %}" alt=" " class="img-responsive" />
+								</div>
+							</div>
+						</div>
+						<div class="agileits_testimonial_grid">
+							<div class="w3l_testimonial_grid">
+								<p>Superb service! The booking process was a breeze, and the driver was punctual and courteous.
+									Will definitely use this platform again!</p>
+								<h4>Laura Paul</h4>
+								<h5>Student</h5>
+								<div class="w3l_testimonial_grid_pos">
+									<img src="{% static 'images/c2.jpg' %}" alt=" " class="img-responsive" />
+								</div>
+							</div>
+						</div>
+						<div class="agileits_testimonial_grid">
+							<div class="w3l_testimonial_grid">
+								<p>Had an excellent experience with CarMan. The driver was friendly,
+									knew the routes well, and the real-time tracking feature was a game-changer.</p>
+								<h4>Michael Doe</h4>
+								<h5>Student</h5>
+								<div class="w3l_testimonial_grid_pos">
+									<img src="{% static 'images/c3.jpg' %}" alt=" " class="img-responsive" />
+								</div>
+							</div>
+						</div>
+				</section>
+			</div>
+		</div>
+	</div>
+		</div>
+<!-- //testimonials -->
+
+<!-- contact -->
+	<div id="contact" class="contact">
+		<div class="container">
+			<div class="w3-heading-all">
+				<h3>Contact Us</h3>
+			</div>
+			<div class="contact-info">
+				<div class="col-md-4 contact-grids">
+					<div class="cnt-address">
+						<h3>Address</h3>
+						<h4>Headquarters</h4>
+						<p>123 T. Globel Place.
+							<span class="w3ls-text">CG 09-123</span>
+							NewYork, Ba. 4567
+						</p>
+						<h4>Get In Touch</h4>
+						<p>Telephone: +1 234 567 2222</p>
+							E-mail: <a href="mailto:abhinandc002@gmail.com">abhinandc002@gmail.com</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-8 contact-grids">
+					<h4 class="cnt-text">Get in Touch – We're Here for You!</h4>
+					<p>Thank you for visiting CarMAn, We appreciate your interest and would love to hear from you. Whether you have a question,
+						feedback, or just want to say hello, we're here to assist you</p>
+					<div class="contact-form">
+						<h3>Drop Us a Line</h3>
+						<form action="messages" method="post">
+							{% csrf_token %}
+							<textarea placeholder="Message" required=""name="n2"></textarea>
+							<input type="text" placeholder="Name" required="" name="n1">
+							<input type="email" placeholder="Email" required="" name="n3">
+							<input type="submit" value="SEND">
+						</form>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48393.30799446157!2d-74.01837574721542!3d40.70520823566694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1453557757637" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+	<!-- //contact -->
+
+<!-- footer -->
+<div class="footer_agile_w3ls">
+	<div class="container">
+		<div class="agileits_w3layouts_footer_grids">
+	        <div class="col-md-3 footer-w3-agileits">
+					<h3>Our Conditions</h3>
+					<ul>
+						<li>Etiam quis placerat</li>
+						<li>the printing</li>
+						<li>unknown printer</li>
+						<li>Lorem Ipsum</li>
+					</ul>
+			</div>
+			<div class="col-md-3 footer-agileits">
+					<h3>Specialized</h3>
+					<ul>
+						<li>the printing</li>
+						<li>Etiam quis placerat</li>
+						<li>Lorem Ipsum</li>
+						<li>unknown printer</li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-wthree">
+					<h3>Partners</h3>
+					<ul>
+						<li>unknown printer</li>
+						<li>Lorem Ipsum</li>
+						<li>the printing</li>
+						<li>Etiam quis placerat</li>
+					</ul>
+				</div>
+
+				<div class="col-md-3 footer-agileits-w3layouts">
+					<h3>Our Links</h3>
+					<ul>
+						<li><a href="#home" class="scroll">Home</a></li>
+						<li><a href="#about"  class="scroll">About</a></li>
+						<li><a href="#services"  class="scroll">Services</a></li>
+					    <li><a href="#contact"  class="scroll">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+
+		</div>
+	</div>
+</div>
+
+<!-- //footer -->
+<!-- js-scripts -->
+<!-- js -->
+	<script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script> <!-- Necessary-JavaScript-File-For-Bootstrap -->
+<!-- //js -->
+
+<!-- start-smoth-scrolling -->
+<script src="js/SmoothScroll.min.js"></script>
+<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+	</script>
+	<!-- //here ends scrolling icon -->
+<!-- start-smoth-scrolling -->
+
+<!-- Baneer-js -->
+	<script src="{% static 'js/responsiveslides.min.js' %}"></script>
+	<script>
+		$(function () {
+			$("#slider").responsiveSlides({
+				auto: true,
+				pager:false,
+				nav: true,
+				speed: 1000,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+		});
+	</script>
+<!-- //Baneer-js -->
+<!-- js for Counter -->
+		<script type="text/javascript" src="{% static 'js/numscroller-1.0.js' %}"></script>
+	<!-- /js for Counter -->
+<!-- carousal -->
+	<script src="{% static 'js/slick.js' %}" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).on('ready', function() {
+		  $(".center").slick({
+			dots: true,
+			infinite: true,
+			centerMode: true,
+			slidesToShow: 2,
+			slidesToScroll: 2,
+			responsive: [
+				{
+				  breakpoint: 768,
+				  settings: {
+					arrows: true,
+					centerMode: false,
+					slidesToShow: 2
+				  }
+				},
+				{
+				  breakpoint: 480,
+				  settings: {
+					arrows: true,
+					centerMode: false,
+					centerPadding: '40px',
+					slidesToShow: 1
+				  }
+				}
+			 ]
+		  });
+		});
+	</script>
+
+</body>
+</html>

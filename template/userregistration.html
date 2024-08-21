@@ -1,0 +1,130 @@
+
+<!DOCTYPE HTML>
+{% load static %}
+<html lang="zxx">
+
+<head>
+	<title>User registration</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Full Screen Enroll Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- Meta tag Keywords -->
+
+	<!-- css files -->
+	<link rel="stylesheet" href="{% static 'css/style4.css' %}" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+
+	<link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=devanagari,latin-ext"
+	 rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="main-w3ls">
+
+		<div class="left-content" style="background-image:url({% static 'images/car1.jpg' %});background:fill">
+
+			<div class="w3ls-content" style="background-color:black;padding-bottom:10px">
+				<a href="index" style="color:White;padding-right:10px">Home</a>
+				<!-- logo -->
+				<h1>
+<!--					<a href="#"><span class="fa fa-magic"></span></a>-->
+				</h1>
+				<!-- //logo -->
+				<h2></h2>
+
+			</div>
+			<!-- copyright -->
+			<div class="copyright">
+
+
+			</div>
+
+		</div>
+		<div class="right-form-agile">
+			<!-- content -->
+			<div class="sub-main-w3">
+				<h3>Signup Now</h3>
+				<h5>Creating an account is free..</h5>
+				<p>and won't take longer than a couple os seconds</p>
+				<form action="userreg" method="post">
+					{% csrf_token %}
+					{% for i in messages %}
+					<p style="color:white">{{i}}</p>
+					{% endfor %}
+					<div class="form-style-agile">
+						<label>Name</label>
+						<div class="pom-agile">
+							<span class="fa fa-user"></span>
+							<input placeholder="Your Name" name="Name" type="text" required="">
+						</div>
+					</div>
+					<div class="form-style-agile">
+						<label>Username</label>
+						<div class="pom-agile">
+							<span class="fa fa-user"></span>
+							<input placeholder="Username" name="Username" type="text" required="">
+						</div>
+					</div>
+					<div class="form-style-agile">
+						<label>User Id</label>
+						<div class="pom-agile">
+							<span class="fa fa-user"></span>
+							<input placeholder="User Id" name="User_id" type="text" required="">
+						</div>
+					</div>
+					<div class="form-style-agile">
+						<label>Email</label>
+						<div class="pom-agile">
+							<span class="fa fa-envelope-open"></span>
+							<input placeholder="Email" name="Email" type="email" required="">
+						</div>
+					</div>
+					<div class="form-style-agile">
+						<label>Phone</label>
+						<div class="pom-agile">
+							<span class="fa fa-phone"></span>
+							<input placeholder="Phone" name="Phone" type="text" required="" pattern="[6789][0-9]{9}" title="please enter valid mobile number">
+						</div>
+					</div>
+					<div class="form-style-agile">
+						<label>Password</label>
+						<div class="pom-agile">
+							<span class="fa fa-key"></span>
+							<input placeholder="Password" name="Password" type="password" id="password1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+						</div>
+					</div>
+					<div class="form-style-agile">
+						<label>Confirm Password</label>
+						<div class="pom-agile">
+							<span class="fa fa-key"></span>
+							<input placeholder="Confirm Password" name="Cpassword" type="password" id="password2" required="">
+						</div>
+					</div>
+
+					<div class="sub-agile">
+
+					</div>
+					<input type="submit" value="Submit">
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

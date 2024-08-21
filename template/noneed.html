@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<div class="section_class_agileits sec-right">-->
+<!--											  <select>-->
+<!--												<option value="0">select class</option>-->
+<!--												<option value="1">Any</option>-->
+<!--												<option value="3">Economy Class</option>-->
+<!--												<option value="2"> Business Class</option>-->
+<!--												<option value="1">First Class</option>-->
+<!--											  </select>-->
+<!--											</div>	-->
+
+
+<!--<div class="agileinfo-recover">-->
+<!--								<form action="#" method="post" class="agile_form">-->
+<!--										<input type="text" placeholder="Your Name" name="name" class="name agileits" required=""/>-->
+<!--										<input type="text" placeholder="Picking up" name="name" class="name agileits" required=""/>-->
+<!--										<input type="text" placeholder="Dropping off" name="name" class="name agileits" required=""/>-->
+<!--										<input placeholder="Pick-up date" class="date" id="datepicker5" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>-->
+<!--										<input placeholder="Drop-off date" class="date" id="datepicker6" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>										-->
+<!--										-->
+<!--										<div class="list_agileits_w3layouts">-->
+<!--											<div class="section_class_agileits sec-left">-->
+<!--											 <select>-->
+<!--												<option value="0">Guests</option>-->
+<!--												<option value="1">0</option>-->
+<!--												<option value="2">1</option>-->
+<!--												<option value="3"> 2</option>-->
+<!--												<option value="4">3 or 3+</option>-->
+<!--											 </select>-->
+<!--											</div>	-->
+<!--											-->
+<!--										</div>				-->
+<!--										<div class="submit">-->
+<!--										  <input type="submit" value="search">-->
+<!--										</div>  -->
+<!--									</form>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							<div class="tab-1 resp-tab-content">-->
+<!--								<div class="agile-send-mail">-->
+<!--								<form action="#" method="post" class="agile_form">-->
+<!--										<input type="text" placeholder="Your Name" name="name" class="name agileits" required=""/>-->
+<!--										<input type="text" placeholder="Going to" name="name" class="name agileits" required=""/>-->
+<!--										<input placeholder="Select date" class="date" id="datepicker7" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>-->
+<!--										<div class="list_agileits_w3layouts">-->
+<!--											<div class="section_class_agileits sec-left">-->
+<!--											 <select>-->
+<!--												<option value="0">Guests</option>-->
+<!--												<option value="1">0</option>-->
+<!--												<option value="2">1</option>-->
+<!--												<option value="3"> 2</option>-->
+<!--												<option value="4">3 or 3+</option>-->
+<!--											 </select>-->
+<!--											</div>	-->
+<!--											-->
+<!--										</div>				-->
+<!--										<div class="submit">-->
+<!--										  <input type="submit" value="search">-->
+<!--										</div>  -->
+<!--                                </form>-->
+
+
+
+
+
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" >
+ //bootstrap-css
+ Custom CSS
+<link href="{% static 'css/style7.css' %}" rel='stylesheet' type='text/css' />
+<link href="{% static 'css/style-responsive.css' %}" rel="stylesheet"/>
+<!-- font CSS -->
+<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="{% static 'css/font.css' %}" type="text/css"/>
+<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/morris.css' %}" type="text/css"/>
+<!-- calendar -->
+<link rel="stylesheet" href="{% static 'css/monthly.css' %}">
+<!-- //calendar -->
+<!-- //font-awesome icons -->
+<script src="{% static 'js/jquery2.0.3.min.js' %}"></script>
+<script src="{% static 'js/raphael-min.js' %}"></script>
+<script src="{% static 'js/morris.js' %}"></script>
+<div class="col-md-8 stats-info stats-last widget-shadow">
+						<div class="stats-last-agile">
+							<table class="table stats-table ">
+								<thead>
+									<tr>
+										<th>S.NO</th>
+										<th>PRODUCT</th>
+										<th>STATUS</th>
+										<th>PROGRESS</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>Lorem ipsum</td>
+										<td><span class="label label-success">In progress</span></td>
+										<td><h5>85% <i class="fa fa-level-up"></i></h5></td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>Aliquam</td>
+										<td><span class="label label-warning">New</span></td>
+										<td><h5>35% <i class="fa fa-level-up"></i></h5></td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>Lorem ipsum</td>
+										<td><span class="label label-danger">Overdue</span></td>
+										<td><h5 class="down">40% <i class="fa fa-level-down"></i></h5></td>
+									</tr>
+									<tr>
+										<th scope="row">4</th>
+										<td>Aliquam</td>
+										<td><span class="label label-info">Out of stock</span></td>
+										<td><h5>100% <i class="fa fa-level-up"></i></h5></td>
+									</tr>
+									<tr>
+										<th scope="row">5</th>
+										<td>Lorem ipsum</td>
+										<td><span class="label label-success">In progress</span></td>
+										<td><h5 class="down">10% <i class="fa fa-level-down"></i></h5></td>
+									</tr>
+									<tr>
+										<th scope="row">6</th>
+										<td>Aliquam</td>
+										<td><span class="label label-warning">New</span></td>
+										<td><h5>38% <i class="fa fa-level-up"></i></h5></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .shadow {
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+  background-color:yellow;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><center>
+<div style="align:center;height:900px;width:350px;">
+    <from action="#" method="post">
+        <h3>Your CarMan is Ready</h3><br>
+        <h5>Amount :{{request.session.amount}}</h5>
+
+    </from>
+    <a href='paymentdone' class="shadow" Style="width:100%">Pay now</a>
+</div></center>
+
+
+</body>
+</html>

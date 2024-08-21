@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="zxx">
+
+<head>
+    <title>Gathering Log In form Responsive Widget Template :: W3layouts</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <!-- //Meta tag Keywords -->
+    <link href="//fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--/Style-CSS -->
+    <link rel="stylesheet" href="{% static 'css/style5.css' %}" type="text/css" media="all" />
+    <!--//Style-CSS -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css" media="all">
+
+</head>
+
+<body>
+    <div class="w3l-signinform" style="background-image:url({% static 'images/cman3.jpg' %})">
+<a href="index" style="float:right;color:white">Home</a>
+        <div class="wrapper">
+            <!-- main content -->
+            <div class="w3l-form-info">
+                <div class="w3_info">
+                    <h1>Welcome</h1>
+                    <p class="sub-para">Find your CarMan</p>
+                    <h2>Log In</h2>
+                    <form action="userlog" method="post">
+                        {% csrf_token %}
+                        <div class="input-group">
+                            <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <input type="text" placeholder="Username" name="username"required="">
+                        </div>
+                        <div class="input-group two-groop">
+                            <span><i class="fa fa-key" aria-hidden="true"></i></span>
+                            <input type="Password" placeholder="Password" name="password" required="">
+                        </div>
+                        <div class="form-row bottom">
+
+<!--                            <a href="#url" class="forgot">Forgot password?</a>-->
+                        </div>
+                        {% for i in messages %}
+					    <p style="color:white">{{i}}</p>
+					    {% endfor %}
+                        <button class="btn btn-primary btn-block" type="submit">Log In</button>
+                    </form>
+                
+                    <p class="account">Don't have an account? <a href="userregform">Register</a></p>
+                </div>
+            </div>
+            <!-- //main content -->
+        </div>
+
+        <div class="footer">
+
+        </div>
+        <!-- footer -->
+    </div>
+
+</body>
+
+</html>
