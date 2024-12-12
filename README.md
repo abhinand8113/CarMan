@@ -1,1 +1,3 @@
 # carman
+
+source myenv/bin/
